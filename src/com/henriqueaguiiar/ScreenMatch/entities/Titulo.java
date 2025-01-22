@@ -1,5 +1,6 @@
 package com.henriqueaguiiar.ScreenMatch.entities;
 
+
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
@@ -8,51 +9,41 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
-
-    public double getTotalDeAvaliacoes(){
-        return  totalDeAvaliacoes;
-    }
-
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
 
-    public void setAnoDeLancamento(int anoDeLancamento) {
-        this.anoDeLancamento = anoDeLancamento;
-    }
-
     public boolean isIncluidoNoPlano() {
         return incluidoNoPlano;
-    }
-
-    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
-    }
-
-    public double getSomaDasAvaliacoes() {
-        return somaDasAvaliacoes;
-    }
-
-    public void setSomaDasAvaliacoes(double somaDasAvaliacoes) {
-        this.somaDasAvaliacoes = somaDasAvaliacoes;
     }
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
 
+    public int getTotalDeAvaliacoes() {
+        return totalDeAvaliacoes;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
-
 
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
@@ -68,4 +59,3 @@ public class Titulo {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
-

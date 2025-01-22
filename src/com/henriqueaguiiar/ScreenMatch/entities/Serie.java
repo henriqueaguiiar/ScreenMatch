@@ -1,6 +1,6 @@
 package com.henriqueaguiiar.ScreenMatch.entities;
 
-public class Serie extends Titulo{
+public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
@@ -10,8 +10,8 @@ public class Serie extends Titulo{
         return temporadas;
     }
 
-    public void setTemporadas(int temporada) {
-        this.temporadas = temporada;
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
     }
 
     public boolean isAtiva() {
